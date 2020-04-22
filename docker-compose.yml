@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    web:
+        image: user-management:1.0
+        build: .
+        ports:
+            - "3000:3000"
+    
+    redis:
+        image: "redis:alpine"
